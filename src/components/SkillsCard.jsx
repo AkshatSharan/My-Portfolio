@@ -25,13 +25,13 @@ const SkillsCard = ({ sectionTitle, sectionData }) => {
                             ))}
                         </div>
                     )}
-                    <div className="ml-4 w-3/4 max-sm:m-0 flex flex-wrap gap-2 text-sm md:text-base font-medium">
+                    <div className="ml-4 w-3/4 max-sm:m-0 flex flex-wrap gap-2 text-sm md:text-base font-medium max-sm:w-full">
                         {sectionData.map((lang, index) => {
                             const isLast = index === sectionData.length - 1;
                             return (
                                 <span
                                     key={index}
-                                    className={`${!hasIcons ? 'border px-3 py-1 rounded-full border-gray-400 text-center max-sm:text-xs' : ''}`}
+                                    className={`text-nowrap ${!hasIcons ? 'border px-3 py-1 rounded-full border-gray-400 text-center max-sm:text-xs' : ''}`}
                                 >
                                     {lang.label}{!isLast && hasIcons && ','}
                                 </span>

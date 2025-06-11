@@ -8,7 +8,7 @@ const ProjectCard = ({
     dir,
 }) => {
     return (
-        <div className={`bg-gray-100 w-3/4 rounded-lg md:flex ${dir ? "md:flex-row-reverse" : ""} items-center overflow-hidden transition-all duration-300 group`}>
+        <div className={`bg-gray-100 sm:w-3/4 rounded-lg md:flex ${dir ? "md:flex-row-reverse" : ""} items-center overflow-hidden transition-all duration-300 group`}>
             {/* Image */}
             <div className="relative overflow-hidden">
                 <img

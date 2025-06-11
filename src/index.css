@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+@import "tailwindcss";
+
+@layer base {
+  * {
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    color: white;
+  }
+
+  .font-secondary {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@theme {
+  --color-gray-100: #212327;
+  --color-gray-200: #3d3f43;
+  --color-gray-300: #5c5d61;
+  --color-gray-400: #8f8f91;
+  --color-gray-500: #c7c7c7;
+  --color-site-gold: #b9a973;
+  --breakpoint-md: 905px;
+}
+
+@layer utilities {
+  .bg-radial-custom {
+    background-image: radial-gradient(circle, #3d3f43, #383a3e, #323438, #2d2f33, #282a2e, #26282c, #232529, #212327, #212327, #212327, #212327, #212327);
+  }
+
+  .font-main {
+    font-family: "Winky Rough", sans-serif;
+  }
+
+  .contact-input {
+    @apply w-full p-3 bg-gray-100 resize-none text-white rounded-sm focus:outline-none focus:ring-2 focus:ring-site-gold placeholder-gray-400;
+  }
+}
+
+@layer components {
+  .site-button {
+    @apply border border-site-gold text-site-gold px-3 py-2 rounded-sm hover:bg-site-gold hover:text-white transition
+  }
+
+  .nav-item {
+    @apply h-fit text-gray-500
+  }
+
+  .site-section {
+    @apply px-10 py-14 border-b border-b-gray-200
+  }
+
+  .section-title {
+    font-family: 'Montserrat', sans-serif;
+    @apply text-4xl text-center font-bold
+  }
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  scroll-padding-top: 48px;
+}
+
+button,
+a {
+  cursor: pointer;
+}

@@ -1,22 +1,22 @@
 import ExperienceCard from "../components/ExperienceCard";
 import SectionTitle from "../components/SectionTitle";
 
-const sampleExperiences = [
+const experiences = [
     {
         company: "Design Esthetics",
         role: "Full Stack Web Developer Intern",
         duration: "03 June, 2024 - 27 June, 2024",
         location: "Bangalore, Karnataka",
         description:
-            "Worked on optimizing search algorithms to improve query response time by 15%. Collaborated with a cross-functional team on new features.",
+            "Developed a full-stack MERN application to manage college club events and recruitments. Implemented secure authentication, real-time notifications, and optimized API/database performance, reducing response times by 25%. Delivered a responsive landing page with React.js, improving load times by 40%. Technologies used: React.js, Redux, Node.js, Express.js, MongoDB, Firebase.",
     },
     {
         company: "MarkeTopper Securities Pvt Ltd",
-        role: "Frontend Developer Intern",
-        duration: "16 May, 2025 -  16 June, 2025",
+        role: "Frontend Web Developer Intern",
+        duration: "01 June, 2025 - 30 June, 2025",
         location: "Remote",
         description:
-            "Developed responsive UI components for Office 365 web apps using React and TypeScript. Improved page load speed and accessibility.",
+            "Built a stock comparison web application using React.js and Recharts to visualize Excel-based financial data. Developed synchronized multi-sheet chart views with interactive features like normalization and logarithmic scaling to ensure accurate trend analysis. Enabled side-by-side and combined sheet comparisons to enhance usability and clarity.",
     },
     {
         company: "Intercorp Biotech Limited",
@@ -24,7 +24,7 @@ const sampleExperiences = [
         duration: "01 June, 2025 -  30 June, 2025",
         location: "Gurgaon, Haryana",
         description:
-            "Built and maintained features on a SaaS platform using MERN stack. Led the integration of payment gateway and improved user onboarding flow.",
+            "Worked on a WooCommerce-based WordPress site using the Kadence theme. Managed the listing and publishing of new products from staging to production during launch. Led the redesign of the shop page to enhance modern aesthetics and improve user experience.",
     },
 ];
 
@@ -32,9 +32,9 @@ const Experience = () => {
     return (
         <section className="site-section bg-gray-200" id="experience">
             <SectionTitle title="Experience" />
-            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-7 mt-2">
+            <div className="max-w-5xl mx-auto sm:px-6 lg:px-8 py-7 mt-2">
                 <div className="flex flex-col space-y-6 md:space-y-8">
-                    {sampleExperiences.map((exp, id) => (
+                    {experiences.map((exp, id) => (
                         <ExperienceCard key={id} {...exp} />
                     ))}
                 </div>

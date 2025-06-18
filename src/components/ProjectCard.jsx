@@ -20,7 +20,7 @@ const ProjectCard = ({
 
             {/* Content */}
             <div
-                className="p-6 h-full md:w-1/2"
+                className="p-6 max-sm:px-0 h-full md:w-1/2"
                 style={{
                     color: "white",
                 }}

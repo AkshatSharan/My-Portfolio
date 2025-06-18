@@ -22,7 +22,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className='fixed z-11 top-0 py-6 px-10 flex w-full justify-between items-center backdrop-blur-xl'>
+        <div className='fixed z-11 top-0 sm:py-6 sm:px-10 py-3 px-7 flex w-full justify-between items-center backdrop-blur-xl'>
             <h1 className='font-main text-5xl text-white'><a className='font-main' href='#main'>A.</a></h1>
 
             <nav className='max-md:hidden'>

@@ -4,38 +4,41 @@ import ClubConnectDisp from '../assets/ClubConnectDisp.png'
 import Coffee from '../assets/Coffee.png'
 import TaskMe from '../assets/TaskMe.png'
 
-const sampleProjects = [
+const projects = [
     {
         title: "TaskMe",
-        description: "A personal portfolio website built with React and Tailwind CSS.",
+        description:
+            "A MERN stack task management platform with team collaboration features. Includes group-based membership with private join codes, task assignment with priority settings, and real-time status updates. Integrated Axios for efficient server communication.",
         imageUrl: TaskMe,
-        techStack: ["MongoDb", "Express.js", "React.js", "Node.js", "Axios", "JavaScript", "Tailwind CSS",],
+        techStack: ["MongoDB", "Express.js", "React.js", "Node.js", "Axios", "JavaScript", "Tailwind CSS"],
         githubLink: "https://github.com/AkshatSharan/TaskMe",
         liveDemo: "https://task-me-sooty.vercel.app/",
     },
     {
         title: "ClubConnect",
-        description: "A personal portfolio website built with React and Tailwind CSS.",
+        description:
+            "A full-stack event and recruitment management system for college clubs. Features secure login, real-time event notifications, optimized API and database performance, and Firebase for file storage. Designed with MERN and Redux for state management.",
         imageUrl: ClubConnectDisp,
-        techStack: ["MongoDb", "Express.js", "React.js", "Node.js", "JavaScript", "Axios", "Firebase", "Tailwind CSS",],
+        techStack: ["MongoDB", "Express.js", "React.js", "Node.js", "JavaScript", "Axios", "Firebase", "Tailwind CSS"],
         githubLink: "https://github.com/AkshatSharan/MERN-Club-Management",
     },
     {
         title: "CoffeeHaven",
-        description: "Real-time chat application with user authentication and private rooms.",
+        description:
+            "A mobile-first, animated landing page themed around coffee. Created with React.js and GSAP for dynamic animations and interactions. Fully optimized for fast loading and mobile responsiveness.",
         imageUrl: Coffee,
-        techStack: ["React", "GSAP", "Tailwind CSS"],
+        techStack: ["React.js", "GSAP", "Tailwind CSS"],
         githubLink: "https://github.com/AkshatSharan/coffee-haven",
         liveDemo: "https://coffee-haven-one.vercel.app/",
-    },
-]
+    }
+];
 
 const Projects = () => {
     return (
         <section className="site-section" id="projects">
             <SectionTitle title={"Projects"} />
             <div className="project-cards-container py-8 mt-5 flex flex-col gap-20 items-center">
-                {sampleProjects.map((project, id) => {
+                {projects.map((project, id) => {
                     const dir = id % 2;
                     return (
                         <ProjectCard

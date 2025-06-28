@@ -13,7 +13,7 @@ const experiences = [
     {
         company: "MarkeTopper Securities Pvt Ltd",
         role: "Frontend Web Developer Intern",
-        duration: "01 June, 2025 - 30 June, 2025",
+        duration: "16 May, 2025 - 30 June, 2025",
         location: "Remote",
         description:
             "Built a stock comparison web application using React.js and Recharts to visualize Excel-based financial data. Developed synchronized multi-sheet chart views with interactive features like normalization and logarithmic scaling to ensure accurate trend analysis. Enabled side-by-side and combined sheet comparisons to enhance usability and clarity.",

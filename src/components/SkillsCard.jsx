@@ -2,7 +2,7 @@ const SkillsCard = ({ sectionTitle, sectionData }) => {
     const hasIcons = sectionData.some(item => item.icon);
 
     return (
-        <div className="py-7">
+        <div className="py-9">
             <div className={`flex max-sm:flex-col-reverse max-sm:gap-6 max-sm:items-start sm:justify-between items-center ${(hasIcons) ? 'border-b border-b-gray-300 pb-5' : ''}`}>
                 <div className='flex max-sm:flex-col max-sm:gap-3 max-sm:items-start items-center'>
                     {hasIcons && (

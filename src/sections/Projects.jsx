@@ -37,7 +37,7 @@ const Projects = () => {
     return (
         <section className="site-section" id="projects">
             <SectionTitle title={"Projects"} />
-            <div className="project-cards-container py-8 mt-5 flex flex-col gap-20 items-center">
+            <div className="project-cards-container py-8 mt-5 flex flex-col md:gap-20 gap-14 items-center">
                 {projects.map((project, id) => {
                     const dir = id % 2;
                     return (

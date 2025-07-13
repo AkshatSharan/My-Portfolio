@@ -8,9 +8,9 @@ const ProjectCard = ({
     dir,
 }) => {
     return (
-        <div className={`bg-gray-100 sm:w-3/4 rounded-lg md:flex ${dir ? "md:flex-row-reverse" : ""} items-center overflow-hidden transition-all duration-300 group`}>
+        <div className={`bg-gray-100 sm:w-full sm:px-10 rounded-lg md:flex ${dir ? "md:flex-row-reverse" : ""} items-center overflow-hidden transition-all duration-300 group`}>
             {/* Image */}
-            <div className="relative overflow-hidden">
+            <div className="w-full relative overflow-hidden">
                 <img
                     src={imageUrl}
                     alt={`${title} preview`}
@@ -20,7 +20,7 @@ const ProjectCard = ({
 
             {/* Content */}
             <div
-                className="p-6 max-sm:px-0 h-full md:w-1/2"
+                className="p-6 max-sm:px-0 h-full md:w-2/3"
                 style={{
                     color: "white",
                 }}

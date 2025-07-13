@@ -50,7 +50,7 @@
   }
 
   .site-section {
-    @apply px-10 py-14 border-b border-b-gray-200
+    @apply px-10 py-16 border-b border-b-gray-200
   }
 
   .section-title {
